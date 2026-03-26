@@ -1,0 +1,21 @@
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  margin-left: 96px;
+  padding: 36px 34px 36px 34px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-left: 0;
+    margin-bottom: 72px;
+    padding: 24px 16px;
+  }
+}

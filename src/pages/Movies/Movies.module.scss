@@ -1,0 +1,39 @@
+
+.page {
+  padding-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 32px;
+}
+
+.empty {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .sectionTitle {
+    font-size: 20px;
+  }
+}
