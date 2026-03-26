@@ -1,0 +1,139 @@
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+  width: 470px;
+  height: 230px;
+  scroll-snap-align: start;
+
+  &:hover .image {
+    transform: scale(1.04);
+  }
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.playBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 28px;
+  padding: 9px 20px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  span {
+    line-height: 1;
+  }
+}
+
+.bookmarkBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(16, 20, 30, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--white);
+
+    svg path {
+      stroke: var(--bg-dark);
+    }
+  }
+}
+
+.info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6px;
+}
+
+.catIcon {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.dot {
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 240px;
+    height: 140px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
