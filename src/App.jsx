@@ -8,13 +8,14 @@ import Login from './pages/Login/Login'
 import TVSeries from './pages/TVSeries/TVSeries';
 import Bookmarks from './pages//BookMarks/BookMarks';
 import styles from './App.module.scss';
+import Sign from './pages/Sign/Sign'
 
 function App() {
   return (
     <MoviesProvider>
       
      <div className={styles.app}>
-       {location.pathname !== '/login' && <Sidebar />}
+       {location.pathname !== '/login' && location.pathname !== '/Sign' && <Sidebar />}
       
 
           
@@ -26,6 +27,7 @@ function App() {
               <Route path="/tv-series"  element={<TVSeries />} />
               <Route path="/bookmarks"  element={<Bookmarks />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/Sign" element={<Sign />} />
             </Routes>
           </main>
         </div>

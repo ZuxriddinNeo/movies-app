@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import styles from "./Login.module.scss";
+import styles from "./Sign.module.scss";
 
 const ClapperIcon = () => (
   <svg
@@ -20,7 +19,7 @@ const ClapperIcon = () => (
   </svg>
 );
 
-export default function Login() {
+export default function SignUp() {
   const [form, setForm] = useState({ email: "", password: "", repeat: "" });
 
   const handleChange = (e) => {
@@ -39,7 +38,7 @@ export default function Login() {
       </div>
 
       <div className={styles.card}>
-        <h1 className={styles.title}>Login</h1>
+        <h1 className={styles.title}>Sign Up</h1>
 
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.inputGroup}>
@@ -61,6 +60,18 @@ export default function Login() {
               name="password"
               placeholder="Password"
               value={form.password}
+              onChange={handleChange}
+              autoComplete="new-password"
+            />
+          </div>
+
+          <div className={styles.inputGroup}>
+            <input
+              className={styles.input}
+              type="password"
+              name="repeat"
+              placeholder="Repeat password"
+              value={form.repeat}
               onChange={handleChange}
               autoComplete="new-password"
             />
