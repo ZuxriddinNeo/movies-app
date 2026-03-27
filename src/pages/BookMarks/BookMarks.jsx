@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useMovies } from '../../context/MoviesContext';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import MovieCard from '../../components/MovieCard/MovieCard';
-import styles from './Bookmarks.module.scss';
+import styles from './BookMarks.module.scss';
 
 export default function Bookmarks() {
   const { movies } = useMovies();

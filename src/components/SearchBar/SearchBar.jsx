@@ -1,4 +1,4 @@
-import { SearchIcon } from '../../components/icon/Icons';
+import { SearchIcon } from '../../components/Icon/icons';
 import styles from './SearchBar.module.scss';
 
 export default function SearchBar({ placeholder, value, onChange }) {

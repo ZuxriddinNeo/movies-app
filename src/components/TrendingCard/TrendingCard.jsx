@@ -4,7 +4,7 @@ import {
   PlayIcon,
   FilmCatIcon,
   TVCatIcon,
-} from "../../components/icon/Icons.jsx";
+} from "../../components/Icon/icons";
 import { useMovies } from "../../context/MoviesContext";
 import styles from "./TrendingCard.module.scss";
 
