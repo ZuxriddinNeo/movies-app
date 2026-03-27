@@ -6,7 +6,7 @@ import Log from '../images/logo.svg'
 
 
 import { NavLink } from 'react-router-dom';
-import { LogoIcon, HomeIcon, MovieIcon, TVIcon, BookmarkIcon } from '../../components/icon/Icons';
+
 import styles from './Sidebar.module.scss';
 
 export default function Sidebar() {
