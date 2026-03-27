@@ -1,6 +1,5 @@
-
-import { createContext, useContext, useState } from 'react';
-import moviesData from '../data/movies';
+import { createContext, useContext, useState } from "react";
+import moviesData from "../data/movies";
 
 const MoviesContext = createContext();
 
@@ -8,8 +7,12 @@ export function MoviesProvider({ children }) {
   const [movies, setMovies] = useState(moviesData);
 
   const toggleBookmark = (id) => {
-    setMovies((prev) =>
-      prev.map((m) => (m.id === id ? { ...m, isBookmarked: !m.isBookmarked } : m))
+    setMovies((movies) =>
+      movies.map((m) =>
+        m.id === id
+          ? { ...m, isBookmarked: !m.isBookmarked }
+          : m
+      )
     );
   };
 

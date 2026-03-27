@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { BookmarkIcon, PlayIcon, FilmCatIcon, TVCatIcon } from '../Icons/Icons';
+import { BookmarkIcon, PlayIcon, FilmCatIcon, TVCatIcon } from '../icon/Icons';
 import { useMovies } from '../../context/MoviesContext';
 import styles from './MovieCard.module.scss';
 

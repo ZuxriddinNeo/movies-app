@@ -1,8 +1,12 @@
-
-import { useState } from 'react';
-import { BookmarkIcon, PlayIcon, FilmCatIcon, TVCatIcon } from '../Icons/Icons';
-import { useMovies } from '../../context/MoviesContext';
-import styles from './TrendingCard.module.scss';
+import { useState } from "react";
+import {
+  BookmarkIcon,
+  PlayIcon,
+  FilmCatIcon,
+  TVCatIcon,
+} from "../../components/icon/Icons.jsx";
+import { useMovies } from "../../context/MoviesContext";
+import styles from "./TrendingCard.module.scss";
 
 export default function TrendingCard({ movie }) {
   const { toggleBookmark } = useMovies();
@@ -32,9 +36,11 @@ export default function TrendingCard({ movie }) {
       )}
 
       <button
-        className={styles.bookmarkBtn}
+        className={`${styles.bookmarkBtn} ${
+          movie.isBookmarked ? styles.active : ""
+        }`}
         onClick={() => toggleBookmark(movie.id)}
-        title={movie.isBookmarked ? 'Remove bookmark' : 'Add bookmark'}
+        title={movie.isBookmarked ? "Remove bookmark" : "Add bookmark"}
       >
         <BookmarkIcon filled={movie.isBookmarked} />
       </button>
@@ -44,7 +50,7 @@ export default function TrendingCard({ movie }) {
           <span>{movie.year}</span>
           <span className={styles.dot}>&bull;</span>
           <span className={styles.catIcon}>
-            {movie.category === 'Movie' ? <FilmCatIcon /> : <TVCatIcon />}
+            {movie.category === "Movie" ? <FilmCatIcon /> : <TVCatIcon />}
           </span>
           <span>{movie.category}</span>
           <span className={styles.dot}>&bull;</span>

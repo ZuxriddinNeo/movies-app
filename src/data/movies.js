@@ -1,3 +1,34 @@
+import f from '../components/images/1 katta.jpg'
+import s from '../components/images/1 kichik.jpg'
+import z from '../components/images/2 katta.jpg'
+import z2 from '../components/images/2 kichik.jpg'
+import q3 from '../components/images/3 katta.jpg'
+import qq3 from '../components/images/3 kichik.jpg'
+import q from '../components/images/4.jpg'
+import w from '../components/images/5.jpg'
+import e from '../components/images/6.jpg'
+import r from '../components/images/7.jpg'
+import t from '../components/images/8.jpg'
+import y from '../components/images/9.jpg'
+import u from '../components/images/10.jpg'
+import i from '../components/images/11.jpg'
+import o from '../components/images/12.jpg'
+import p from '../components/images/13.jpg'
+import a from '../components/images/27.jpg'
+import ss from '../components/images/15.jpg'
+import d from '../components/images/16.jpg'
+import ff from '../components/images/17.jpg'
+import g from '../components/images/18.jpg'
+import h from '../components/images/19.jpg'
+import j from '../components/images/20.jpg'
+import k from '../components/images/21.jpg'
+import l from '../components/images/22.jpg'
+import zz from '../components/images/23.jpg'
+import x from '../components/images/24.jpg'
+import c from '../components/images/25.jpg'
+import v from '../components/images/26.jpg'
+import b from '../components/images/27.jpg'
+import n from '../components/images/26.jpg'
 
 const movies = [
   {
@@ -8,8 +39,8 @@ const movies = [
     rating: "PG",
     isTrending: true,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/bey1/280/170",
-    thumbnailLarge: "https://picsum.photos/seed/bey1/470/230",
+    thumbnail: f,
+    thumbnailLarge: s,
   },
   {
     id: 2,
@@ -19,8 +50,8 @@ const movies = [
     rating: "PG",
     isTrending: true,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/bot2/280/170",
-    thumbnailLarge: "https://picsum.photos/seed/bot2/470/230",
+    thumbnail: z,
+    thumbnailLarge: z2,
   },
   {
     id: 3,
@@ -30,8 +61,8 @@ const movies = [
     rating: "E",
     isTrending: true,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/und3/280/170",
-    thumbnailLarge: "https://picsum.photos/seed/und3/470/230",
+    thumbnail: q3,
+    thumbnailLarge:qq3,
   },
   {
     id: 4,
@@ -41,7 +72,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/gre4/280/170",
+    thumbnail: q,
   },
   {
     id: 5,
@@ -51,7 +82,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/dia5/280/170",
+    thumbnail: w,
   },
   {
     id: 6,
@@ -61,7 +92,7 @@ const movies = [
     rating: "18+",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/ear6/280/170",
+    thumbnail: e,
   },
   {
     id: 7,
@@ -71,7 +102,7 @@ const movies = [
     rating: "E",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/nol7/280/170",
+    thumbnail: r,
   },
   {
     id: 8,
@@ -81,7 +112,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/hun8/280/170",
+    thumbnail: t,
   },
   {
     id: 9,
@@ -91,7 +122,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/aut9/280/170",
+    thumbnail: y,
   },
   {
     id: 10,
@@ -101,7 +132,7 @@ const movies = [
     rating: "E",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/sam10/280/170",
+    thumbnail: u,
   },
   {
     id: 11,
@@ -111,7 +142,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/bel11/280/170",
+    thumbnail: i,
   },
   {
     id: 12,
@@ -121,7 +152,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/roc12/280/170",
+    thumbnail: o,
   },
   {
     id: 13,
@@ -131,7 +162,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/rel13/280/170",
+    thumbnail: p,
   },
   {
     id: 14,
@@ -141,7 +172,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/off14/280/170",
+    thumbnail: a,
   },
   {
     id: 15,
@@ -151,7 +182,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/bor15/280/170",
+    thumbnail: ss,
   },
   {
     id: 16,
@@ -161,7 +192,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/com16/280/170",
+    thumbnail: d,
   },
   {
     id: 17,
@@ -171,7 +202,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/whi17/280/170",
+    thumbnail: ff,
   },
   {
     id: 18,
@@ -181,7 +212,7 @@ const movies = [
     rating: "18+",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/one18/280/170",
+    thumbnail:g ,
   },
   {
     id: 19,
@@ -191,7 +222,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/hos19/280/170",
+    thumbnail: h,
   },
   {
     id: 20,
@@ -201,7 +232,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/lon20/280/170",
+    thumbnail:j ,
   },
   {
     id: 21,
@@ -211,7 +242,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/pro21/280/170",
+    thumbnail: k,
   },
   {
     id: 22,
@@ -221,7 +252,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/dog22/280/170",
+    thumbnail: l,
   },
   {
     id: 23,
@@ -231,7 +262,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/van23/280/170",
+    thumbnail: zz,
   },
   {
     id: 24,
@@ -241,7 +272,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/dar24/280/170",
+    thumbnail:x ,
   },
   {
     id: 25,
@@ -251,7 +282,7 @@ const movies = [
     rating: "18+",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/drk25/280/170",
+    thumbnail: c,
   },
   {
     id: 26,
@@ -261,7 +292,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: true,
-    thumbnail: "https://picsum.photos/seed/mis26/280/170",
+    thumbnail: v,
   },
   {
     id: 27,
@@ -271,7 +302,7 @@ const movies = [
     rating: "18+",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/unr27/280/170",
+    thumbnail: b,
   },
   {
     id: 28,
@@ -281,7 +312,7 @@ const movies = [
     rating: "PG",
     isTrending: false,
     isBookmarked: false,
-    thumbnail: "https://picsum.photos/seed/tas28/280/170",
+    thumbnail: n,
   },
 ];
 
