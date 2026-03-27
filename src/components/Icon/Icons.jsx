@@ -6,9 +6,9 @@ export const LogoIcon = () => (
     viewBox="0 0 24 24"
     fill="none"
   >
-    <rect x="2" y="8" width="20" height="14" rx="2" fill="#ff0000" />
+    <rect x="2" y="8" width="40" height="30" rx="2" fill="#ff0000" />
 
-    <rect x="2" y="4" width="20" height="5" rx="1" fill="#e05555" />
+    <rect x="2" y="4" width="40" height="30" rx="1" fill="#e05555" />
 
     <line x1="6" y1="4" x2="4" y2="9" stroke="white" stroke-width="1.5" />
     <line x1="11" y1="4" x2="9" y2="9" stroke="white" stroke-width="1.5" />

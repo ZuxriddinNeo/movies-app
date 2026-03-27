@@ -12,8 +12,12 @@ import styles from './App.module.scss';
 function App() {
   return (
     <MoviesProvider>
+      
      <div className={styles.app}>
-          <Sidebar />
+       {location.pathname !== '/login' && <Sidebar />}
+      
+
+          
           
           <main className={styles.main}>
             <Routes>
